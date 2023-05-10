@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    border: 2px solid orange;
+}
+
+.header ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+
+}
+
+.header ul:first {
+    flex-grow: 1;
+    border: 2px solid orange;
+}
