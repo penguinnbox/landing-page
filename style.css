@@ -1,20 +1,113 @@
 body {
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0 8%;
+    font-family: Roboto, sans-serif;
+    
+}
+
+
+
+.header, .footer, .intro {
+    background-color: #1F2937;
+}
+
+.header, .intro {
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 .header {
-    border: 2px solid orange;
+    flex: .5 1 auto;
+    display: flex;
 }
 
 .header ul {
     list-style-type: none;
     display: flex;
-    gap: 15px;
-
+    gap: 10px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 0;
 }
 
-.header ul:first {
+.logo {
     flex-grow: 1;
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.intro {
+    flex: 1 1 auto;
+    display: flex;
+    gap: 15px;
+    padding: 18px 0
+}
+
+.img-container {
+    flex: 1 1 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-left {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.intro-left button{
+    border: 0px;
+    background-color: #3882F6;
+    padding: 4px 15px;
+    border-radius: 10%;
+    align-items: flex-start;
+}
+
+.intro-left span {
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #F9FAF8;
+}
+
+.info-one {
+    border: 2px solid red;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 25px;
+}
+
+.info-title {
+    align-self: center;  
+}
+
+.card-container {
+    border: 3px solid red;
+    display: flex;
+}
+
+
+
+
+
+.info-two {
+    border: 2px solid olive;
+    flex: 1 1 auto;
+}
+
+.info-three {
+    border: 2px solid black;
+    flex: 1 1 auto;
+}
+
+.footer {
     border: 2px solid orange;
+    flex: .5 1 auto;
 }
