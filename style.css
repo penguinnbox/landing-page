@@ -3,12 +3,14 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0;
-    padding: 0 8%;
-    font-family: Roboto, sans-serif;
     
+    font-family: Roboto, sans-serif;
+	overflow: scroll;
 }
 
-
+body > div {
+	padding: 0 8%;
+}
 
 .header, .footer, .intro {
     background-color: #1F2937;
@@ -64,8 +66,8 @@ body {
 .intro-left button{
     border: 0px;
     background-color: #3882F6;
-    padding: 4px 15px;
-    border-radius: 10%;
+    cursor: pointer;
+	padding: 8px 16px;
     align-items: flex-start;
 }
 
@@ -76,38 +78,101 @@ body {
 }
 
 .info-one {
-    border: 2px solid red;
-    flex: 1 1 auto;
+    flex: 1 0 auto;
     display: flex;
     flex-direction: column;
     gap: 25px;
     padding-top: 25px;
+	padding-bottom: 35px;
 }
 
 .info-title {
-    align-self: center;  
+    align-self: center; 
+	font-size: 36px;
+	font-weight: extra-bold;
+	color: #1F2937;
 }
 
 .card-container {
-    border: 3px solid red;
+	flex: 1 0 35%;
     display: flex;
+	justify-content: center;
+	gap: 20px;
 }
 
+.card {
+	display: flex;
+	flex-direction: column;
+}
 
+.card img {
+	flex: 1 0 auto;
+	border: 2px solid #3882F6;
+	border-radius: 15%;
+}
 
 
 
 .info-two {
-    border: 2px solid olive;
-    flex: 1 1 auto;
+    flex: 1 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 20%;
+	background-color: #E5E7EB;
+}
+
+.quote {
+	display: flex;
+	flex-direction: column;
+}
+
+.quote p {
+	font-size: 36px;
+	font-style: italic;
+	color: #1F2937;
+}
+
+.quote span {
+	align-self: flex-end;
+	font-weight: bold;
 }
 
 .info-three {
-    border: 2px solid black;
-    flex: 1 1 auto;
+    flex: 1 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 60px 0;
+	color: #F9FAF8;
+}
+
+.sign-up {
+	display: flex;
+	background-color: #3882F6;
+	gap: 35px;
+	padding: 15px 75px;
+}
+
+.sign-up button {
+	align-self: center;
+	background-color: #3882F6;
+	border: 1px solid white;
+	cursor: pointer;
+	padding: 8px 16px;
+	border-radius: 8px;
+	color: #F9FAF8;
+}
+
+.sign-up span {
+	font-weight: bold;
 }
 
 .footer {
-    border: 2px solid orange;
     flex: .5 1 auto;
+	color: #F9FAF8;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
+
